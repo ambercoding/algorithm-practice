@@ -1,0 +1,20 @@
+<script type="text/javascript">
+	
+function longVowel(string){
+	var vowelArray = ['a','e','i','o','u'];
+	var vowelArrayLength = vowelArray.length;
+	var stringLength = vowelArray.length;
+	for(var i=0; i<vowelArrayLength; i++){
+		for(var j=0; i< stringLength; j++){
+			if((string[i] === vowelArray[i])&&(string[i+1] === vowelArray[i])){
+				return true;
+			}
+
+		}
+	}
+}
+
+string = "Cheese";
+longVowel(string);
+
+</script>

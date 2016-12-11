@@ -1,0 +1,16 @@
+<script type="text/javascript">
+function leetSpeak(paragraph){
+	var checkerArray = ['A','E','G','I','0','S','T'];
+	var replaceWith = ['4','3','6','1','0','5','7']
+	paragraphToUpperCase = paragraph.toUpperCase();
+	var counterLength = replaceWith.length;
+	for(var i=0; i<=counterLength; i++){
+		for (var j=0; j<paragraph.length;j++){
+			var updatedParagraph = paragraphToUpperCase.replace(checkerArray[i],replaceWith[i]);
+			paragraphToUpperCase = updatedParagraph;
+	}
+	}
+}
+var paragraph = "Given a paragraph"
+leetSpeak(paragraph);
+</script>

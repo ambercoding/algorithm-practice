@@ -1,0 +1,18 @@
+<script type="text/javascript">
+	
+		function fridayTheThirteenth(year){
+		var date = new Date ();
+		var fridayTheThirteenthdayCounter = 0;
+		for(var i =0; i<=11; i++){
+			var targetDate = date.setFullYear(year, i, 13)
+			var targetDay = date.getDay()
+			var targetDayOfWeek = date.getDay();
+			if(targetDayOfWeek == 5){
+				fridayTheThirteenthdayCounter ++;
+				console.log(fridayTheThirteenthdayCounter);
+			}
+		}
+		return fridayTheThirteenthdayCounter;
+	}
+	fridayTheThirteenth(2016);
+</script>
